@@ -1,0 +1,11 @@
+# catalogue.txt
+titre;annee;realisateur;note
+Inception;2010;Nolan;9
+Interstellar;2014;Nolan;8
+Parasite;2019;Bong Joon-ho;10
+The Godfather;1972;Coppola;10
+Pulp Fiction;1994;Tarantino;9
+Interstellar,2014,Nolan,8.6
+
+Oppenheimer;2023;Nolan;9
+Oppenheimer;2023;Nolan;9
