@@ -32,3 +32,8 @@ if films_notes:
         print(f"{film['titre']} ({film['annee']}) - Realisateur : {film['real']} - Note : {int(film['note'])}/10")
 else:
     print("Aucun film avec note >= 9") 
+    
+# 4. Moyenne des notes
+if films:
+    moyenne = sum(film['note'] for film in films) / len(films)
+    print(f"\nNote moyenne : {moyenne:.2f}/10")    
