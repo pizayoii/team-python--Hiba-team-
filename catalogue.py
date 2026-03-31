@@ -22,4 +22,13 @@ except FileNotFoundError:
 # 2. Afficher chaque film
 print("=== Catalogue complet ===")
 for film in films:
-    print(f"{film['titre']} ({film['annee']}) - Realisateur : {film['real']} - Note : {int(film['note'])}/10")    
+    print(f"{film['titre']} ({film['annee']}) - Realisateur : {film['real']} - Note : {int(film['note'])}/10")   
+    
+# 3. Films avec note >= 9
+print("\n=== Films avec note >= 9 ===")
+films_notes = [f for f in films if f['note'] >= 9]
+if films_notes:
+    for film in films_notes:
+        print(f"{film['titre']} ({film['annee']}) - Realisateur : {film['real']} - Note : {int(film['note'])}/10")
+else:
+    print("Aucun film avec note >= 9") 
