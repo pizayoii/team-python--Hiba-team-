@@ -7,5 +7,5 @@ The Godfather;1972;Coppola;10
 Pulp Fiction;1994;Tarantino;9
 Interstellar,2014,Nolan,8.6
 
-Oppenheimer;2023;Nolan;9
-Oppenheimer;2023;Nolan;9
+
+harry-potter;2001;Columbus;10

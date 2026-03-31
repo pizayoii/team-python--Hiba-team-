@@ -36,4 +36,21 @@ else:
 # 4. Moyenne des notes
 if films:
     moyenne = sum(film['note'] for film in films) / len(films)
-    print(f"\nNote moyenne : {moyenne:.2f}/10")    
+    print(f"\nNote moyenne : {moyenne:.2f}/10")
+
+# 5. Ajouter un nouveau film
+nouveau_film = "harry-potter;2001;Columbus;10"
+with open(file_path, 'a', encoding='utf-8') as f:
+    f.write('\n' + nouveau_film)
+
+# 6. Relire et réafficher
+print("\n=== Catalogue après ajout ===")
+with open(file_path, 'r', encoding='utf-8') as f:
+    next(f)  # Ignorer le commentaire
+    next(f)  # Ignorer l'en-tête
+    for line in f:
+        line = line.strip()
+        if line:
+            parts = line.split(';')
+            if len(parts) == 4:
+                print(f"{parts[0]} ({parts[1]}) - Realisateur : {parts[2]} - Note : {int(float(parts[3]))}/10")    
