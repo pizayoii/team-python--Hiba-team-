@@ -19,3 +19,7 @@ except FileNotFoundError:
     print("Erreur : fichier non trouvé")
     exit()
     
+# 2. Afficher chaque film
+print("=== Catalogue complet ===")
+for film in films:
+    print(f"{film['titre']} ({film['annee']}) - Realisateur : {film['real']} - Note : {int(film['note'])}/10")    
