@@ -8,18 +8,21 @@ def compter_reussites(listes):
       return compter  
 print(compter_reussites(listes_notes))
 def afficher_mention(moyenne):
-      for i in moyenne:
+   
             if i>=16:
-                  print(f"pour la note {i} la mention est très bien")
+                  return " la mention est très bien"
             elif i>=14:
-                  print(f"pour la note {i} la mention est bien") 
+                  return "la mention est bien"
             elif i>=12:
-                  print(f"pour la note {i} la mention est assez bien")
+                  return "la mention est assez bien"
             elif i>=10:
-                  print(f"pour la note {i} la mention est passable")
+                  return " la mention est passable"
             else:
-                  print(f"pour la note {i} la mention est insuffisant")
-                  
+                  return " la mention est insuffisant"
 
+moyen=0.0                  
+for i in listes_notes:
+      moyen=moyen+i/len(listes_notes)
 
+print(afficher_mention(moyen))
 
