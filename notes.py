@@ -8,3 +8,8 @@ def calculer_moyenne(liste):
     return round(sum(liste) / len(liste), 1)
 
 print("Moyenne :", calculer_moyenne(notes))
+def afficher_min_max(liste):
+    print(f"Note la plus basse : {min(liste)}")
+    print(f"Note la plus haute : {max(liste)}")
+
+afficher_min_max(notes)
